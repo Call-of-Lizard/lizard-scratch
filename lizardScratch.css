@@ -7,3 +7,10 @@ body{
     background-color: var(--normalDarkBackground);
     color: var(--normalDarkText);
 }
+
+.midBox{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
