@@ -8,21 +8,44 @@ function fromEnglish() {
 
     //basic scramble
     for(let i = 0; i < leString.length; i++){
-        //turn to number
-    console.log(leString.charCodeAt(i) - 69);
-    console.log("loop: " + i);
-        //add to string
-    leStringOutput = leStringOutput + Number(leString.charCodeAt(i) - 69);
+
+    if(leString.charCodeAt(i) - 69 != -37){
+    leStringOutput = leStringOutput + String.fromCharCode(Number(leString.charCodeAt(i) - 2));
+    }
+    else{
+    leStringOutput = leStringOutput + " ";
+    }
     }
     
     console.log(leStringOutput)
 
     //end
+    document.getElementById('inputAreaScratch').value = leStringOutput;
     return leString
 }
 
 function fromScratch() {
-    var useThisLater = "lol"
-    console.log("Scratch input:" + document.getElementById('inputAreaEnglish').value) //debug
-    return useThisLater
+    //setup
+    var leString = "No input";
+    var leStringOutput = "";
+    var i;
+    console.log("English input:" + document.getElementById('inputAreaScratch').value) //debug
+    leString = document.getElementById('inputAreaScratch').value;
+
+    //basic scramble
+    for(let i = 0; i < leString.length; i++){
+
+    if(leString.charCodeAt(i) - 69 != -37){
+    leStringOutput = leStringOutput + String.fromCharCode(Number(leString.charCodeAt(i) + 2));
+    }
+    else{
+    leStringOutput = leStringOutput + " ";
+    }
+    }
+    
+    console.log(leStringOutput)
+
+    //end
+    document.getElementById('inputAreaEnglish').value = leStringOutput;
+    return leString
 }
