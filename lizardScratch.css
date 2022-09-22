@@ -8,6 +8,15 @@ body{
     color: var(--normalDarkText);
 }
 
+header{
+    width: 100%;
+    display: flex;
+}
+
+.headerBack{
+    margin: 3px;
+}
+
 .midBox{
     margin: auto;
     text-align: center;
