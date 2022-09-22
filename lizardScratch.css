@@ -26,5 +26,5 @@ header{
     margin: auto;
     text-align: center;
     justify-content: center;
-    display: flex;
+    display: block;
 }
