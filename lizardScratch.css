@@ -28,3 +28,22 @@ header{
     justify-content: center;
     display: block;
 }
+
+.stronch{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+textarea{
+    height: 250px;
+    background-color: tan;
+}
+
+button{
+    background-color: wheat;
+    border-color: rgb(185, 166, 129);
+    color: rgb(82, 72, 31);
+}
