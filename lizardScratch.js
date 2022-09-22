@@ -1,3 +1,5 @@
-function run() {
-    return cnsl.value
+function fromEnglish() {
+    var useThisLater = "lol"
+    console.log(document.getElementById('inputAreaEnglish').value)
+    return useThisLater
 }
